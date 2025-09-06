@@ -13,7 +13,7 @@ cd ..
 sudo rm -R yay
 
 # Install Hyprland + required
-yay -S --needed \
+yay -S --needed --noconfirm \
 			alacritty \
 			cliphist \
 			dunst \
@@ -41,7 +41,7 @@ yay -S --needed \
 			xdg-desktop-portal-hyprland
 
 # Install extra stuff
-yay -S --needed \
+yay -S --needed --noconfirm \
 			1password \
 			1password-cli \
 			bazaar \
