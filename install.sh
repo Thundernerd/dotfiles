@@ -20,6 +20,13 @@ yay -S --needed --noconfirm \
 			cliphist \
 			dunst \
 			elephant \
+			elephant-desktopapplications \
+			elephant-archlinuxpkgs \
+			elephant-websearch \
+			elephant-clipboard \
+			elephant-files \
+			elephant-menus \
+			elephant-calc \
 			eww \
 			hyprcursor \
 			hyprgraphics \
