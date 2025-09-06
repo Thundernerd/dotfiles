@@ -19,6 +19,7 @@ yay -S --needed --noconfirm \
 			alacritty \
 			cliphist \
 			dunst \
+			elephant \
 			eww \
 			hyprcursor \
 			hyprgraphics \
