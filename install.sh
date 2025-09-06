@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Install basics
-sudo pacman -S --needed base-devel \
+sudo pacman -S --needed --noconfirm base-devel \
 			git \
 			nano
 
 # Install yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 cd ..
 sudo rm -R yay
 
