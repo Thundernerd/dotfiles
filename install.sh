@@ -35,9 +35,11 @@ yay -S --needed --noconfirm \
 			pipewire \
 			qt5-wayland \
 			qt6-wayland \
+			rustup \
 			stow \
 			swaylock \
 			uwsm \
+			walker \
 			xdg-desktop-portal-hyprland
 
 # Install extra stuff
