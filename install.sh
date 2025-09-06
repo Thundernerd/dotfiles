@@ -10,7 +10,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
-rm -r yay
+sudo rm -R yay
 
 # Install Hyprland + required
 yay -S --needed \
@@ -37,6 +37,7 @@ yay -S --needed \
 			qt6-wayland \
 			stow \
 			swaylock \
+			uwsm \
 			xdg-desktop-portal-hyprland
 
 # Install extra stuff
