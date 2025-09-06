@@ -41,7 +41,7 @@ yay -S --needed --noconfirm \
 			xdg-desktop-portal-hyprland
 
 # Install extra stuff
-yay -S --needed --noconfirm \
+yay -S --needed \
 			1password \
 			1password-cli \
 			bazaar \
@@ -81,3 +81,5 @@ yay -S --needed --noconfirm \
 			winetricks \
 			yazi \
 			zip
+
+yay -Scc
