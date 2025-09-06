@@ -5,12 +5,14 @@ sudo pacman -S --needed --noconfirm base-devel \
 			git \
 			nano
 
-# Install yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
-cd ..
-sudo rm -R yay
+# Install yay if necessary
+if ! command -v yay &>/dev/null; then
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si --noconfirm
+	cd ..
+	sudo rm -R yay
+fi
 
 # Install Hyprland + required
 yay -S --needed --noconfirm \
