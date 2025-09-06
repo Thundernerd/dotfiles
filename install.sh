@@ -83,3 +83,4 @@ yay -S --needed \
 			zip
 
 yay -Scc
+yay -Ycc
