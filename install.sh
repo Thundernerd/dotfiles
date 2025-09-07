@@ -43,7 +43,7 @@ yay -S --needed --noconfirm \
 			nautilus \
 			nautilus-admin-gtk4 \
 			nautilus-open-any-terminal \
-			nerd-fonts-git \
+			# nerd-fonts-git \
 			noto-fonts \
 			pipewire \
 			qt5-wayland \
