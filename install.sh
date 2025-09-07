@@ -14,6 +14,9 @@ if ! command -v yay &>/dev/null; then
 	sudo rm -R yay
 fi
 
+# Install Rustup to prevent any cargo issues down the line
+yay -S --needed rustup
+
 # Install Hyprland + required
 yay -S --needed --noconfirm \
 			alacritty \
@@ -45,7 +48,6 @@ yay -S --needed --noconfirm \
 			pipewire \
 			qt5-wayland \
 			qt6-wayland \
-			rustup \
 			stow \
 			swaylock \
 			uwsm \
@@ -53,7 +55,7 @@ yay -S --needed --noconfirm \
 			xdg-desktop-portal-hyprland
 
 # Install extra stuff
-yay -S --needed \
+yay -S --needed --noconfirm \
 			1password \
 			1password-cli \
 			bazaar \
