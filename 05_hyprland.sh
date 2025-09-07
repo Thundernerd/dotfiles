@@ -17,7 +17,6 @@ yay -S --needed --noconfirm \
 			hyprgraphics \
 			hypridle \
 			hyprland \
-			hyprpaper \
 			hyprpicker \
 			hyprpolkitagent \
 			hyprshot \
@@ -32,6 +31,7 @@ yay -S --needed --noconfirm \
 			quickshell \
 			stow \
 			swaylock \
+			swww \
 			uwsm \
 			walker \
 			xdg-desktop-portal-hyprland
