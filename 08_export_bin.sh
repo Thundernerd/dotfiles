@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep -qxF 'export PATH="$PATH:$HOME/.local/bin"' ~/.bash_profile || echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bash_profile
+append_if_not_exists $"HOME/.bash_profile" 'export PATH="$PATH:$HOME/.local/bin"'
