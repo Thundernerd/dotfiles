@@ -3,7 +3,8 @@
 # Exit immediately if a command exits with a non-zero status
 set -eE
 
-source "$(dirname"$0")/funcs/append_if_not_exists.sh"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/funcs/append_if_not_exists.sh"
 
 source 02_basics.sh
 source 03_yay.sh
