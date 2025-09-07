@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Install Hyprland + required
+yay -S --needed --noconfirm \
+			alacritty \
+			cliphist \
+			dunst \
+			elephant \
+			elephant-desktopapplications \
+			elephant-archlinuxpkgs \
+			elephant-websearch \
+			elephant-clipboard \
+			elephant-files \
+			elephant-menus \
+			elephant-calc \
+			eww \
+			hyprcursor \
+			hyprgraphics \
+			hypridle \
+			hyprland \
+			hyprpaper \
+			hyprpicker \
+			hyprpolkitagent \
+			hyprshot \
+			hyprsunset \
+			nautilus \
+			nautilus-admin-gtk4 \
+			nautilus-open-any-terminal \
+			# nerd-fonts-git \
+			noto-fonts \
+			pipewire \
+			qt5-wayland \
+			qt6-wayland \
+			stow \
+			swaylock \
+			uwsm \
+			walker \
+			xdg-desktop-portal-hyprland
+
+BLOCK='if uwsm check may-start; then
+    exec uwsm start hyprland-uwsm.desktop
+fi'
+
+FILE="$HOME/.bash_profile"
+
+# Add the block only if it's not already present
+grep -qxF "exec uwsm start hyprland-uwsm.desktop" "$FILE" || echo -e "\n$BLOCK" >> "$FILE"
