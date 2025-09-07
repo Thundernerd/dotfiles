@@ -13,7 +13,6 @@ yay -S --needed --noconfirm \
 			elephant-files \
 			elephant-menus \
 			elephant-calc \
-			eww \
 			hyprcursor \
 			hyprgraphics \
 			hypridle \
@@ -30,6 +29,7 @@ yay -S --needed --noconfirm \
 			pipewire \
 			qt5-wayland \
 			qt6-wayland \
+			quickshell \
 			stow \
 			swaylock \
 			uwsm \
