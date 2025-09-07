@@ -36,11 +36,6 @@ yay -S --needed --noconfirm \
 			walker \
 			xdg-desktop-portal-hyprland
 
-BLOCK='if uwsm check may-start; then
-    exec uwsm start hyprland-uwsm.desktop
-fi'
-
-FILE="$HOME/.bash_profile"
-
-# Add the block only if it's not already present
-grep -qxF "exec uwsm start hyprland-uwsm.desktop" "$FILE" || echo -e "\n$BLOCK" >> "$FILE"
+append_block_if_not_exists "$HOME/.bashrc" \
+    "exec uwsm start hyprland-uwsm.desktop" \
+    $'if uwsm check may-start; then\n    exec uwsm start hyprland-uwsm.desktop\nfi'
