@@ -3,3 +3,4 @@
 stow hyprland
 stow omarchy
 stow walker
+stow alacritty
