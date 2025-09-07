@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yay -Scc
-yay -Ycc
+#yay -Scc
+#yay -Ycc
